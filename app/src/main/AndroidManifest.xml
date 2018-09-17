@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sadma.example.nearbyservices">
+
+     <!-- App Permission of this Application -->
+     <uses-permission android:name="android.permission.CALL_PHONE"/>
+     <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+     <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- For Route -->
+
+
+    <!-- For Route -->
+
+     <application
+         android:name=".utils.AppController"
+         android:allowBackup="true"
+         android:icon="@mipmap/ic_launcher"
+         android:label="@string/app_name"
+         android:roundIcon="@mipmap/ic_launcher"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+         <activity
+             android:name=".ui.SplashScreenActivity"
+             android:launchMode="singleTop">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+
+                 <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
+
+             <meta-data
+                 android:name="android.app.default_searchable"
+                 android:value=".ui.PlaceSearchResultActivity"/>
+         </activity>
+         <activity
+             android:name=".ui.PlaceSearchResultActivity"
+             android:label="@string/app_name">
+
+             <!-- to identify this activity as "searchable" -->
+             <intent-filter>
+                 <action android:name="android.intent.action.SEARCH"/>
+
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+
+             <meta-data
+                 android:name="android.app.searchable"
+                 android:resource="@xml/searchable"/>
+         </activity>
+
+         <activity
+             android:name=".ui.HomeScreenActivity"
+             android:label="@string/app_name">
+         </activity>
+
+         <meta-data
+             android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version"/>
+
+         <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+             android:value="AIzaSyARyyRZ0oSxvFT5261VNUcS5vLDrvt07SQ"/>
+         <activity android:name=".ui.PlaceListActivity">
+         </activity>
+         <activity android:name=".ui.PlaceDetailActivity">
+         </activity>
+         <activity android:name=".ui.PlaceListOnMapActivity">
+         </activity>
+         <activity android:name=".ui.FavouritePlaceListActivity">
+         </activity>
+
+         <provider
+             android:name=".data.PlaceDetailProvider"
+             android:authorities="com.sadma.example.nearbyservices"
+             android:exported="false"/>
+
+         <receiver android:name=".widget.PlaceDetailWidgetProvider">
+             <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+             </intent-filter>
+
+             <meta-data
+                 android:name="android.appwidget.provider"
+                 android:resource="@xml/location_detail_widget_info"/>
+         </receiver>
+
+         <service
+             android:name=".widget.PlaceDetailWidgetService"
+             android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+     </application>
+
+
+ </manifest>
