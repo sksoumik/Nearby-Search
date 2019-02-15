@@ -17,3 +17,5 @@ An android application for searching nearby services like ATM, Bank, Cafe, Docto
 - Circle ImageView Library
 - Card View with Recycler View 
 - Material Rating Bar
+
+![Alt Text](https://media.giphy.com/media/kiJIIzLnSk0JoSOFfW/giphy.gif)
