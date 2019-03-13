@@ -3,7 +3,7 @@ An android application for searching nearby services like ATM, Bank, Cafe, Docto
 ### app demo:   [this link](https://youtu.be/AB8bg9EHAvU).
 
 ---
-![alt text](https://i.imgur.com/T0hKN8Gm.gif)
+![alt text](https://i.imgur.com/T0hKN8G.gifv)
 ---
 ### Features
 - A user can search services into different categories.
