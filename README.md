@@ -4,7 +4,7 @@ An android application for searching nearby services like ATM, Bank, Cafe, Docto
 
 ---
 ### App Demo
-
+###### click on the image
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/AB8bg9EHAvU/0.jpg)](https://www.youtube.com/watch?v=AB8bg9EHAvU)
 ---
 ### Features
