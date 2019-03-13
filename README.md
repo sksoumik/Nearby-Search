@@ -2,8 +2,8 @@
 An android application for searching nearby services like ATM, Bank, Cafe, Doctors, Fire Station, Gas Station etc. 
 ### app demo:   [this link](https://youtu.be/AB8bg9EHAvU).
 
-![Alt Text](https://i.imgur.com/T0hKN8G.gif)
-
+---
+![alt text](https://i.imgur.com/T0hKN8G.gif)
 ---
 ### Features
 - A user can search services into different categories.
